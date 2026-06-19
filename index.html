@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Study Planner</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="background"></div>
+
+<div class="container">
+
+<div class="left">
+
+<h1>📚 AI Study Planner</h1>
+
+<p>Create a personalized study schedule using AI.</p>
+
+<input id="subject" placeholder="Subject">
+
+<input type="date" id="examDate">
+
+<input type="number" id="hours" placeholder="Hours per day">
+
+<select id="level">
+<option>Beginner</option>
+<option>Intermediate</option>
+<option>Advanced</option>
+</select>
+
+<button onclick="generatePlan()">
+✨ Generate Study Plan
+</button>
+
+<div class="loader" id="loader">
+<div class="spinner"></div>
+<p>AI is preparing your study plan...</p>
+</div>
+
+<div class="progress">
+<div id="progressBar"></div>
+</div>
+
+</div>
+
+<div class="right">
+
+<div class="cards">
+
+<div class="card">
+<h2 id="daysLeft">--</h2>
+<span>Days Left</span>
+</div>
+
+<div class="card">
+<h2 id="hoursCard">0</h2>
+<span>Hours/Day</span>
+</div>
+
+<div class="card">
+<h2 id="levelCard">-</h2>
+<span>Level</span>
+</div>
+
+</div>
+
+<div class="output-section">
+
+<h2>Your AI Study Plan</h2>
+
+<pre id="result"></pre>
+
+</div>
+
+</div>
+
+</div>
+<script src="script.js"></script>
+
+</body>
+</html>
+s
